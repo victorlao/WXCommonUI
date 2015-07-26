@@ -23,6 +23,8 @@
 /* Begin PBXBuildFile section */
 		3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CECB1B6512A300B09571 /* WXButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CECC1B6512A300B09571 /* WXButton.m */; };
+		3BA5CF1C1B652DE800B09571 /* UIImage+WX_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CF1A1B652DE800B09571 /* UIImage+WX_Extensions.h */; };
+		3BA5CF1D1B652DE800B09571 /* UIImage+WX_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CF1B1B652DE800B09571 /* UIImage+WX_Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		3BA5CEB21B6511CA00B09571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5CECB1B6512A300B09571 /* WXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXButton.h; sourceTree = "<group>"; };
 		3BA5CECC1B6512A300B09571 /* WXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXButton.m; sourceTree = "<group>"; };
+		3BA5CF1A1B652DE800B09571 /* UIImage+WX_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WX_Extensions.h"; sourceTree = "<group>"; };
+		3BA5CF1B1B652DE800B09571 /* UIImage+WX_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WX_Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 			children = (
 				3BA5CECB1B6512A300B09571 /* WXButton.h */,
 				3BA5CECC1B6512A300B09571 /* WXButton.m */,
+				3BA5CF1A1B652DE800B09571 /* UIImage+WX_Extensions.h */,
+				3BA5CF1B1B652DE800B09571 /* UIImage+WX_Extensions.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */,
+				3BA5CF1C1B652DE800B09571 /* UIImage+WX_Extensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA5CF1D1B652DE800B09571 /* UIImage+WX_Extensions.m in Sources */,
 				3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
