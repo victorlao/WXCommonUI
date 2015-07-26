@@ -7,28 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BA5CEB41B6511CA00B09571 /* WXCommonUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CEB31B6511CA00B09571 /* WXCommonUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BA5CEBA1B6511CA00B09571 /* WXCommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA5CEAE1B6511CA00B09571 /* WXCommonUI.framework */; };
-		3BA5CEC11B6511CA00B09571 /* WXCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CEC01B6511CA00B09571 /* WXCommonUITests.m */; };
+		3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CECB1B6512A300B09571 /* WXButton.h */; };
+		3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CECC1B6512A300B09571 /* WXButton.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3BA5CEBB1B6511CA00B09571 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BA5CEA51B6511CA00B09571 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BA5CEAD1B6511CA00B09571;
-			remoteInfo = WXCommonUI;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3BA5CEAE1B6511CA00B09571 /* WXCommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WXCommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA5CEB21B6511CA00B09571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BA5CEB31B6511CA00B09571 /* WXCommonUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXCommonUI.h; sourceTree = "<group>"; };
-		3BA5CEB91B6511CA00B09571 /* WXCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA5CEBF1B6511CA00B09571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BA5CEC01B6511CA00B09571 /* WXCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXCommonUITests.m; sourceTree = "<group>"; };
+		3BA5CECB1B6512A300B09571 /* WXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXButton.h; sourceTree = "<group>"; };
+		3BA5CECC1B6512A300B09571 /* WXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BA5CEB61B6511CA00B09571 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BA5CEBA1B6511CA00B09571 /* WXCommonUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				3BA5CEB01B6511CA00B09571 /* WXCommonUI */,
-				3BA5CEBD1B6511CA00B09571 /* WXCommonUITests */,
 				3BA5CEAF1B6511CA00B09571 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				3BA5CEAE1B6511CA00B09571 /* WXCommonUI.framework */,
-				3BA5CEB91B6511CA00B09571 /* WXCommonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +48,7 @@
 		3BA5CEB01B6511CA00B09571 /* WXCommonUI */ = {
 			isa = PBXGroup;
 			children = (
-				3BA5CEB31B6511CA00B09571 /* WXCommonUI.h */,
+				3BA5CECA1B65129200B09571 /* Sources */,
 				3BA5CEB11B6511CA00B09571 /* Supporting Files */,
 			);
 			path = WXCommonUI;
@@ -85,21 +62,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3BA5CEBD1B6511CA00B09571 /* WXCommonUITests */ = {
+		3BA5CECA1B65129200B09571 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3BA5CEC01B6511CA00B09571 /* WXCommonUITests.m */,
-				3BA5CEBE1B6511CA00B09571 /* Supporting Files */,
+				3BA5CECB1B6512A300B09571 /* WXButton.h */,
+				3BA5CECC1B6512A300B09571 /* WXButton.m */,
 			);
-			path = WXCommonUITests;
-			sourceTree = "<group>";
-		};
-		3BA5CEBE1B6511CA00B09571 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3BA5CEBF1B6511CA00B09571 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,7 +78,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA5CEB41B6511CA00B09571 /* WXCommonUI.h in Headers */,
+				3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,24 +103,6 @@
 			productReference = 3BA5CEAE1B6511CA00B09571 /* WXCommonUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BA5CEB81B6511CA00B09571 /* WXCommonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BA5CEC71B6511CA00B09571 /* Build configuration list for PBXNativeTarget "WXCommonUITests" */;
-			buildPhases = (
-				3BA5CEB51B6511CA00B09571 /* Sources */,
-				3BA5CEB61B6511CA00B09571 /* Frameworks */,
-				3BA5CEB71B6511CA00B09571 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BA5CEBC1B6511CA00B09571 /* PBXTargetDependency */,
-			);
-			name = WXCommonUITests;
-			productName = WXCommonUITests;
-			productReference = 3BA5CEB91B6511CA00B09571 /* WXCommonUITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,9 +113,6 @@
 				ORGANIZATIONNAME = lao;
 				TargetAttributes = {
 					3BA5CEAD1B6511CA00B09571 = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					3BA5CEB81B6511CA00B09571 = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -182,20 +130,12 @@
 			projectRoot = "";
 			targets = (
 				3BA5CEAD1B6511CA00B09571 /* WXCommonUI */,
-				3BA5CEB81B6511CA00B09571 /* WXCommonUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3BA5CEAC1B6511CA00B09571 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BA5CEB71B6511CA00B09571 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,26 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BA5CEB51B6511CA00B09571 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BA5CEC11B6511CA00B09571 /* WXCommonUITests.m in Sources */,
+				3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3BA5CEBC1B6511CA00B09571 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BA5CEAD1B6511CA00B09571 /* WXCommonUI */;
-			targetProxy = 3BA5CEBB1B6511CA00B09571 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3BA5CEC21B6511CA00B09571 /* Debug */ = {
@@ -349,36 +274,6 @@
 			};
 			name = Release;
 		};
-		3BA5CEC81B6511CA00B09571 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WXCommonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		3BA5CEC91B6511CA00B09571 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WXCommonUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,14 +291,6 @@
 			buildConfigurations = (
 				3BA5CEC51B6511CA00B09571 /* Debug */,
 				3BA5CEC61B6511CA00B09571 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		3BA5CEC71B6511CA00B09571 /* Build configuration list for PBXNativeTarget "WXCommonUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BA5CEC81B6511CA00B09571 /* Debug */,
-				3BA5CEC91B6511CA00B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
