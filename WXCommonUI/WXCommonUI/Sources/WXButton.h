@@ -10,4 +10,6 @@
 
 @interface WXButton : UIButton
 
+- (void)test;
+
 @end

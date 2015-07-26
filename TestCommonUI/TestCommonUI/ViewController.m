@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <WXCommonUI/WXButton.h>
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    WXButton *btn = [[WXButton alloc] initWithFrame:CGRectZero];
+    [btn test];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

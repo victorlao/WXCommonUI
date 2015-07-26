@@ -10,4 +10,9 @@
 
 @implementation WXButton
 
+- (void)test
+{
+    NSLog(@"hello world");
+}
+
 @end

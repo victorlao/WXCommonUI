@@ -14,6 +14,7 @@
 		3BA5CEEE1B65141B00B09571 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5CEED1B65141B00B09571 /* Images.xcassets */; };
 		3BA5CEF11B65141B00B09571 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA5CEEF1B65141B00B09571 /* LaunchScreen.xib */; };
 		3BA5CEFD1B65141B00B09571 /* TestCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CEFC1B65141B00B09571 /* TestCommonUITests.m */; };
+		3BA5CF101B65160400B09571 /* WXCommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA5CF0F1B65160400B09571 /* WXCommonUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3BA5CEF61B65141B00B09571 /* TestCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA5CEFB1B65141B00B09571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5CEFC1B65141B00B09571 /* TestCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCommonUITests.m; sourceTree = "<group>"; };
+		3BA5CF0F1B65160400B09571 /* WXCommonUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WXCommonUI.framework; path = "../WXCommonUI/build/Debug-iphoneos/WXCommonUI.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA5CF101B65160400B09571 /* WXCommonUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		3BA5CED41B65141B00B09571 = {
 			isa = PBXGroup;
 			children = (
+				3BA5CF0F1B65160400B09571 /* WXCommonUI.framework */,
 				3BA5CEDF1B65141B00B09571 /* TestCommonUI */,
 				3BA5CEF91B65141B00B09571 /* TestCommonUITests */,
 				3BA5CEDE1B65141B00B09571 /* Products */,
@@ -347,6 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/laozhenqiang/WXCommonUI/WXCommonUI/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TestCommonUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/laozhenqiang/WXCommonUI/WXCommonUI/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = TestCommonUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +428,7 @@
 				3BA5CF021B65141B00B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BA5CF031B65141B00B09571 /* Build configuration list for PBXNativeTarget "TestCommonUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				3BA5CF051B65141B00B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

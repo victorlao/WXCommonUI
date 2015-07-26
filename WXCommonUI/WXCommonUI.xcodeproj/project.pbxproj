@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CECB1B6512A300B09571 /* WXButton.h */; };
+		3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CECB1B6512A300B09571 /* WXButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CECC1B6512A300B09571 /* WXButton.m */; };
 /* End PBXBuildFile section */
 
@@ -341,6 +341,7 @@
 				3BA5CEC61B6511CA00B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BA5CED01B65134900B09571 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
 			isa = XCConfigurationList;
@@ -349,6 +350,7 @@
 				3BA5CED21B65134900B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
