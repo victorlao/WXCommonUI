@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3BA5CECF1B65134900B09571 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3BA5CED01B65134900B09571 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				3BA5CED31B65137B00B09571 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3BA5CECD1B6512A300B09571 /* WXButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA5CECB1B6512A300B09571 /* WXButton.h */; };
 		3BA5CECE1B6512A300B09571 /* WXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5CECC1B6512A300B09571 /* WXButton.m */; };
@@ -115,6 +129,9 @@
 					3BA5CEAD1B6511CA00B09571 = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					3BA5CECF1B65134900B09571 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 3BA5CEA81B6511CA00B09571 /* Build configuration list for PBXProject "WXCommonUI" */;
@@ -130,6 +147,7 @@
 			projectRoot = "";
 			targets = (
 				3BA5CEAD1B6511CA00B09571 /* WXCommonUI */,
+				3BA5CECF1B65134900B09571 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +161,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA5CED31B65137B00B09571 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n\n# 例如: FMK_NAME = \"MyFramework\"\n\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\n#open \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BA5CEA91B6511CA00B09571 /* Sources */ = {
@@ -274,6 +308,20 @@
 			};
 			name = Release;
 		};
+		3BA5CED11B65134900B09571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3BA5CED21B65134900B09571 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -291,6 +339,14 @@
 			buildConfigurations = (
 				3BA5CEC51B6511CA00B09571 /* Debug */,
 				3BA5CEC61B6511CA00B09571 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BA5CED01B65134900B09571 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BA5CED11B65134900B09571 /* Debug */,
+				3BA5CED21B65134900B09571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
